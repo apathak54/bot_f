@@ -66,7 +66,7 @@ db = FAISS.load_local(
         folder_path="faiss",
         index_name="index",
         embeddings=OpenAIEmbeddings(model="text-embedding-3-large"),
-        allow_dangerous_deserialization=True,
+        # allow_dangerous_deserialization=True,
     )
 
 
