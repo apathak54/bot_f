@@ -98,9 +98,10 @@ async def audio(file: Annotated[bytes, File()]):# Annotated[bytes, File()]):
     message = {"response": text}
     return JSONResponse(message)
     
-# @app.get("/")
-# async def index(request: Request):
-#     return templates.TemplateResponse("index.html", {"request": request})
+@app.get("/req")
+async def index(request: Request):
+    return print("hi")
+
 
 
 
