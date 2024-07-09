@@ -100,7 +100,7 @@ async def audio(file: Annotated[bytes, File()]):# Annotated[bytes, File()]):
     
 @app.get("/req")
 async def index(request: Request):
-    return print("hi")
+    return JSONResponse({"output": "responded"})
 
 
 
